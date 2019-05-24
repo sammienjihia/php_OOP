@@ -19,7 +19,6 @@ class printSth{
         
     }
 
-    
 }
 
 // greetings is an object of the printSth class
