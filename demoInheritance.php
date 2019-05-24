@@ -1,6 +1,10 @@
 <?php
 
+// using a namespace
+// use First;
+
 require_once('human.php');
+include 'name_space.php';
 
 class User extends Human 
 {
@@ -30,6 +34,8 @@ class User extends Human
         return $this->race;
     }
 }
+
+echo \First\PrintSth::sayHello();
 
 $sam = new User("black");
 $sam->setName("Sammy");
