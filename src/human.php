@@ -1,5 +1,8 @@
 <?php
 
+namespace Acme;
+
+
 class Human
 {
     protected $race;
