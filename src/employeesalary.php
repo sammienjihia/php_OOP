@@ -1,16 +1,11 @@
 <?php
 
-// demonstarting an interface
-interface CalculateNetSalary
-{
-    public function calcPayee();
+namespace Acme; 
 
-    public function calcNhifDeductions();
 
-    public function calcNssfDeductions();
 
-    public function calcNetPay();
-}
+require_once('claculatenetsalary.php');
+
 
 class EmployeeSalary implements CalculateNetSalary{
     var $grosspay;
@@ -52,8 +47,6 @@ class EmployeeSalary implements CalculateNetSalary{
 
 }
 
-$pay = new EmployeeSalary(200000, 1200, 2500);
 
-$pay->calcNetPay();
 
 ?>
