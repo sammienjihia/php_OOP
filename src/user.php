@@ -1,10 +1,8 @@
 <?php
 
-// using a namespace
-// use First;
 
-require_once('human.php');
-include 'name_space.php';
+namespace Acme;
+
 
 class User extends Human 
 {
@@ -35,11 +33,3 @@ class User extends Human
     }
 }
 
-echo \First\PrintSth::sayHello();
-
-$sam = new User("black");
-$sam->setName("Sammy");
-echo $sam->getName();
-$sam->setAge(5);
-echo $sam->getAge();
-echo $sam->getRace();

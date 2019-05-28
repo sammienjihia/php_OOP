@@ -1,6 +1,10 @@
 <?php
 
-class printSth{
+namespace Acme;
+
+class PrintSth{
+
+    use ShowHello;
     
     // Below variables demonstrates the class's properties
     var $first_name;
@@ -21,8 +25,6 @@ class printSth{
 
 }
 
-// greetings is an object of the printSth class
-$greetings = new printSth("sammy", "njihia");
-$greetings->greetings();
+
 
 ?>
